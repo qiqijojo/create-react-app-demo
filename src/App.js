@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'antd';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div>
         asddadsdss
+        <Button type="danger">按钮</Button>
       </div>
       // <div className="App">
       //   <header className="App-header">
