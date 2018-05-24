@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div>
         asddadsdss
-        <Button type="primary">按钮</Button>
+        <Button type="primary">按钮hello</Button>
       </div>
       // <div className="App">
       //   <header className="App-header">
