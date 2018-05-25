@@ -3,7 +3,6 @@ import { Button } from 'antd';
 import { connect } from 'react-redux';
 import { getData } from '../../actions/demo/demo';
 import { bindActionCreators } from 'redux';
-import ajax from 'request';
 
 
 class Demo extends Component {

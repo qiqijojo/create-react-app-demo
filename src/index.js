@@ -11,6 +11,7 @@ import App from './App';
 import Demo from './pages/demo/Demo';
 // import registerServiceWorker from './registerServiceWorker';
 
+
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(

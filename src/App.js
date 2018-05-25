@@ -5,7 +5,6 @@ import { Button } from 'antd';
 class App extends Component {
   constructor(props) {
     super(props);
-    console.log('props', this)
   }
   appClick = () => {
     this.props.history.push('/demo');
