@@ -11,7 +11,7 @@ let initDemoList = {
           case 'GET_DEMO_DATA':
             return {
                 ...state,
-                demoData: action.demoData
+                demoData: action.payload
             }
             default:
                 return state;

@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
-import Demo from './routes/Demo';
-// import logo from './logo.svg';
 // import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    console.log('props', this)
+  }
+  appClick = () => {
+    this.props.history.push('/demo');
+  }
   render() {
     return (
       <div>
         asddadsdss
-        <Button type="primary">按钮hello</Button>
-      <Demo/>        
+        <Button type="primary" onClick={this.appClick}>按钮hello</Button>
       </div>
       // <div className="App">
       //   <header className="App-header">

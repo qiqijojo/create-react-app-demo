@@ -5,24 +5,23 @@ import { Provider } from 'react-redux';
 import {Router, Route, IndexRoute} from 'react-router';
 import thunk from 'redux-thunk';
 import history from './history';
-import './index.css';
-import App from './App';
 import rootReducer from './reducers';
+import './index.css';
+import App from './pages/App';
+import Demo from './pages/demo/Demo';
 // import registerServiceWorker from './registerServiceWorker';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
-console.log('=====ssss', store);
+
 ReactDOM.render(
-    // <App />, 
     <Provider store={store}>
-        {/* <App/> */}
-    <Router history={history}>
-      <Route path="/" component={App}>
-        {/* <Route path="foo" component={Foo}/>
-        <Route path="bar" component={Bar}/> */}
-      </Route>
-    </Router>
-  </Provider>,
+        <Router history={history}>
+            <div>
+                <Route path="/" exact component={App}/>
+                <Route path="/demo" component={Demo}/>
+            </div>
+        </Router>
+    </Provider>,
     document.getElementById('root')
 );
 // registerServiceWorker();
