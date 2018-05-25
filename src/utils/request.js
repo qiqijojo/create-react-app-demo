@@ -1,18 +1,18 @@
 
+const request = 'ddd';
+// const request = (url, data) =>
+//   '榴莲弄就甭害怕';
+// fetch('https://operation.xuprise.com' + url, {
+//     method: 'POST',
+//     body: JSON.stringify(data),
+//     headers: {
+//         'Content-Type': 'application/json'
+//     }
+// }).then(res => res.json())
+// .catch(err => {
+//     console.error('获取数据出错', err.message);
+// })
 
-const request = (url, data) => {
-    return '榴莲弄就甭害怕';
-    // fetch('https://operation.xuprise.com' + url, {
-    //     method: 'POST',
-    //     body: JSON.stringify(data), 
-    //     headers: {
-    //         'Content-Type': 'application/json' 
-    //     }
-    // }).then(res => res.json())
-    // .catch(err => {
-    //     console.error('获取数据出错', err.message);
-    // })
-}
 // const request = axios.create({
 //   baseURL:
 //     process.env.NODE_ENV === 'production'
