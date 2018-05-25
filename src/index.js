@@ -7,9 +7,11 @@ import thunk from 'redux-thunk';
 import history from './history';
 import './index.css';
 import App from './App';
+import rootReducer from './reducers';
 // import registerServiceWorker from './registerServiceWorker';
 
-const store = createStore(applyMiddleware(thunk));
+const store = createStore(rootReducer, applyMiddleware(thunk));
+console.log('=====ssss', store);
 ReactDOM.render(
     // <App />, 
     <Provider store={store}>
