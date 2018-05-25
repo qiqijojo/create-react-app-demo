@@ -22,7 +22,7 @@ class Demo extends Component {
         return (
             <div>
                 <Button type="danger" onClick={this.btnClick}>我是danger</Button>
-                {/* <div>{this.state.myState1}</div> */}
+                <div>{this.state.myState1}</div>
             </div>
         )
     }
