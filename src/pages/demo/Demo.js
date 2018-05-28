@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import history from '../../utils/history';
 import { getData } from '../../actions/demo/demo';
 // import { bindActionCreators } from 'redux';
 
@@ -15,12 +15,12 @@ class Demo extends Component {
   }
   handleBtnClick = () => {
     // this.props.clickEvent();
-    this.props.history.goBack();
+    history.goBack();
   }
   render() {
     return (
       <div>
-        <Button type="danger" onClick={this.handleBtnClick}>我是danger</Button>
+        <Button type="danger" onClick={this.handleBtnClick}>我是Demo页面</Button>
         <div>{this.state.myState1}</div>
       </div>
     );
@@ -36,7 +36,4 @@ const mapDispatchToProps = dispatch => ({
 //     state => ({ ...state.home }),
 //     dispatch => bindActionCreators({ getData }, dispatch)
 // );
-Demo.propTypes = {
-  history: PropTypes.shape().isRequired,
-};
 export default connect(mapStateToProps, mapDispatchToProps)(Demo);

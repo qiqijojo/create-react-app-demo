@@ -109,7 +109,9 @@
           "eventHandlerPropPrefix": "on"
         }
       ],
-      "no-unused-vars": "warn"
+      "no-unused-vars": "warn",
+      "import/no-unresolved": "off",
+      "import/extensions": "off"
     }
   },
   "lint-staged": {
