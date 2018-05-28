@@ -6,11 +6,11 @@ import LeftMenu from './components/layout/LeftMenu';
 import Header from './components/layout/Header';
 import Home from './pages/home/Home';
 import Demo from './pages/demo/Demo';
-// import './App.css';
+import './App.less';
 
 const AntContent = Layout.Content;
 const AppLayout = ({ component: Component, ...rest }) => (
-  <Layout>
+  <Layout className="app-wrapper">
     <Header />
     <Layout>
       <LeftMenu />

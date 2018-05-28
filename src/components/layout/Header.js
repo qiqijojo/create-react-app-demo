@@ -1,12 +1,13 @@
 import React from 'react';
 import { Layout } from 'antd';
+import './Header.less';
 
 const AntHeader = Layout.Header;
 
 const Header = () => (
   <AntHeader>
     <div className="logo" />
-    <div className="topWidth">代理商CRM</div>
+    <div className="nav-text">CRM后台</div>
   </AntHeader>
 );
 

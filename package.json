@@ -111,7 +111,8 @@
       ],
       "no-unused-vars": "warn",
       "import/no-unresolved": "off",
-      "import/extensions": "off"
+      "import/extensions": "off",
+      "react/prefer-stateless-function": "off"
     }
   },
   "lint-staged": {

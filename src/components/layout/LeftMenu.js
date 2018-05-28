@@ -1,41 +1,31 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Icon } from 'antd';
+import './LeftMenu.less';
 
 const AntSider = Layout.Sider;
-
+const { SubMenu } = Menu;
 class LeftMenu extends Component {
-    state = {
-      collapsed: false,
-    };
-    handleToggle = () => {
-      this.setState({
-        collapsed: !this.state.collapsed,
-      });
-    }
-    render() {
-      return (
-        <AntSider
-          trigger={null}
-          collapsible
-          collapsed={this.state.collapsed}
-        >
-          <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+  render() {
+    return (
+      <AntSider className="sider-wrapper">
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+          <SubMenu title={<span><Icon type="user" />人事管理</span>}>
             <Menu.Item key="1">
-              <Icon type="user" />
-              <span>nav 1</span>
+              <span>代理商组织架构</span>
             </Menu.Item>
             <Menu.Item key="2">
-              <Icon type="video-camera" />
-              <span>nav 2</span>
+              <span>代理商员工管理</span>
             </Menu.Item>
             <Menu.Item key="3">
-              <Icon type="upload" />
-              <span>nav 3</span>
+              <span>渠道组织架构</span>
             </Menu.Item>
-          </Menu>
-        </AntSider>
-      );
-    }
+            <Menu.Item key="4">
+              <span>渠道员工管理</span>
+            </Menu.Item>
+          </SubMenu>
+        </Menu>
+      </AntSider>
+    );
+  }
 }
 export default LeftMenu;
