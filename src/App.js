@@ -25,9 +25,9 @@ const AppLayout = ({ component: Component, ...rest }) => (
 const App = ({ history }) => (
   <Router history={history}>
     <Switch>
-      <Route path="/" exact render={() => <AppLayout component={Demo} />} />
-      <Route path="/hr/agent/org" exact render={() => <AppLayout component={AgentOrganize} />} />
-      <Route path="/hr/agent/stuff" exact render={() => <AppLayout component={AgentStuff} />} />
+      <Route path="/manage" exact render={() => <AppLayout component={Demo} />} />
+      <Route path="/manage/hr/agent/org" exact render={() => <AppLayout component={AgentOrganize} />} />
+      <Route path="/manage/hr/agent/stuff" exact render={() => <AppLayout component={AgentStuff} />} />
     </Switch>
   </Router>
 );

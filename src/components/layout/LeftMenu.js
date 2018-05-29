@@ -15,13 +15,13 @@ class LeftMenu extends Component {
   handleMenu = ({ key, keyPath }) => {
     switch (key) {
       case '1001':
-        history.push('/hr/agent/org');
+        history.push('/manage/hr/agent/org');
         this.setState({
           selectedKeys: keyPath,
         });
         break;
       case '1002':
-        history.push('/hr/agent/stuff');
+        history.push('/manage/hr/agent/stuff');
         this.setState({
           selectedKeys: keyPath,
         });
