@@ -15,7 +15,7 @@ class Demo extends Component {
   }
   handleBtnClick = () => {
     // this.props.clickEvent();
-    history.goBack();
+    history.push('/hr/agent/org');
   }
   render() {
     return (

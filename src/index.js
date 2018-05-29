@@ -13,7 +13,6 @@ import App from './App';
 
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
-console.log('sss', history);
 ReactDOM.render(
   <Provider store={store}>
     <LocaleProvider locale={zhCN}>
